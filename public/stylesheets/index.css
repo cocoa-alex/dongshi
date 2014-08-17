@@ -83,8 +83,55 @@ html, body {
 #slide3 {
 	background: #000;
 }
+#people {
+	width: 960px;
+	height: 360px;
+	margin-left: -480px;
+	margin-top: -150px;
+	box-shadow: 0 13px 25px #000;
+}
+.people-single {
+	width: 240px;
+	height: 180px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+}
+.people-single img {
+	width: 100%;
+	height: 100%;
+}
+.people-desc {
+	background: #000;
+	display: block;
+	width: 200px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	padding: 10px 20px;
+	color: #fff;
+	-webkit-transition: all .3s ease-out 0s;
+	text-align: center;
+	font-size: 17px;
+}
+.people-single:hover .people-desc {
+	opacity: 0.9;
+}
+.people-text {
+	width: 500px;
+	margin-left: -250px;
+	margin-top: -290px;
+}
 /* Slide 4 */
 #slide4 {
 	background: url(../images/bg5.jpg);
 	background-size: cover;
+}
+.button-2-top {
+	width: 80px;
+	height: 80px;
+	margin-left: -40px;
+	background-position: -60px 0;
 }
