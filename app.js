@@ -1,5 +1,7 @@
 var express = require('express');
 var path = require('path');
+var MongoStore = require('connect-mongo')(express);
+var setting = require('./settings');
 var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -21,6 +23,14 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.session({
+    secret: setting.cookieSecret,
+    key: settings.db, //cookie name
+    cookie: {maxAge: 1000 * 60 * 60 * 24 * 20}, //30 days
+    store: new MongoStore({
+        db.settings.db
+    })
+}));
 
 app.use('/', routes);
 app.use('/users', users);
