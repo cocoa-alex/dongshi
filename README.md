@@ -1,3 +1,3 @@
 dongshi
 =======
-NodeJs、Express
+NodeJs、Express、Jade、Mongodb
