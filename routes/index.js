@@ -6,4 +6,8 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Express'});
 });
 
+router.get('/reg', function(req, res) {
+  res.render('reg', {title: '注册'});
+});
+
 module.exports = router;
