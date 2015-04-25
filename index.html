@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.css">
+
+    <style>
+        body {
+        }
+        .ui.menu .item {
+            font-size: 1.5rem;
+        }
+        section {
+            height: 100%;
+            width: 100%;
+        }
+        section .shape, section .sides {
+            width: 100%;
+            height: 100%;
+        }
+        section .direction {
+            position: absolute;
+            bottom: 30px;
+            left: 48%;
+        }
+        .ui.cube.shape .side {
+            height: 100%;
+            padding: 0;
+            overflow: hidden;
+        }
+        .side img {
+            width: 100%;
+            height: 100%;
+        }
+        .footer .container{
+            width: 765px;
+            right: 128px;
+            margin: 0em auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="ui fixed inverted main menu" id="header">
+        <div class="container">
+            <div class="item">
+                大庆动视传媒 
+            </div>
+            <div class="right menu">
+                <a href="" class="item">
+                    首页
+                </a>
+                <a href="" class="item">
+                    动画片
+                </a>
+                <a href="" class="item">
+                    儿童剧
+                </a>
+                <a href="" class="item">
+                    关于我们
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="ui cube shape">
+            <div class="sides">
+              <div class="active side">
+                <div class="content">
+                    <img src="/img/1.jpg">
+                </div>
+              </div>
+              <div class="side">
+                <div class="content">
+                    <img src="/img/2.jpg">
+                </div>
+              </div>
+              <div class="side">
+                <div class="content">
+                    <img src="/img/3.jpg">
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="ui ignored icon direction buttons">
+            <div class="ui button" data-animation="flip" data-direction="left"><i class="left long arrow icon"></i></div>
+            <div class="ui icon button" data-animation="flip" data-direction="right"><i class="right long arrow icon"></i></div>
+        </div>
+    </section>
+    <section>
+        <div class="ui relaxed grid">
+            <div class="two column row">
+                <div class="column">123</div>
+                <div class="column">
+                    <p>
+                        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="ui relaxed grid">
+            <div class="two column row">
+                <div class="column">123</div>
+                <div class="column">
+                    <p>
+                        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ui inverted black footer vertical segment footer">
+      <div class="container">
+        <div class="ui stackable inverted divided relaxed grid">
+          <div class="eight wide column">
+            <h3 class="ui inverted header">大庆动视文化传媒</h3>
+            <p>是一家很🐂B的公司，公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司</p>
+            <button type="submit" class="ui teal button">联系电话：0459-6666666</button>
+          </div>
+          <div class="four wide column">
+            <h5 class="ui teal inverted header">更多</h5>
+            <div class="ui inverted link list">
+              <a class="item" target="_blank">人才招聘</a>
+              <a class="item">关于我们</a>
+            </div>
+          </div>
+          <div class="four wide column">
+            <h5 class="ui teal inverted header">友情链接</h5>
+            <div class="ui inverted link list">
+              <a class="item">百度</a>
+              <a class="item">新浪</a>
+              <a class="disabled item">搜狐</a>
+              <a class="disabled item">网易</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/semantic/dist/semantic.js"></script>
+<script src="/public/shape.js"></script>
+<script>
+$(function(){
+$});
+</script>    
+</body>
+</html>
