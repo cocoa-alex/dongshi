@@ -4,145 +4,110 @@
     <meta charset="UTF-8">
     <title>Document</title>
 
-    <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.css">
-
-    <style>
-        body {
-            font-family: "PingHei","Lucida Grande","Lucida Sans Unicode", "STHeiti", "Helvetica","Arial","Verdana","sans-serif";
-        }
-        .ui.menu .item {
-            font-size: 1.5rem;
-        }
-        section {
-            width: 100%;
-        }
-        section:nth-of-type(1) {
-            height: 100%;
-        }
-        section .shape, section .sides {
-            width: 100%;
-            height: 100%;
-        }
-        section .direction {
-            position: absolute;
-            bottom: 30px;
-            left: 48%;
-        }
-        .ui.cube.shape .side {
-            height: 100%;
-            padding: 0;
-            overflow: hidden;
-        }
-        .side img {
-            width: 100%;
-            height: 100%;
-        }
-        .footer .container{
-            width: 765px;
-            right: 128px;
-            margin: 0em auto;
-        }
-        section:nth-of-type(2) {
-            height: 200%;
-            background: #369369;
-        }
-        section:nth-of-type(3) {
-            height: 200%;
-            background: #963963;
-        }
-    </style>
+    <!-- <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.css"> -->
+    <link rel="stylesheet" href="/bower_components/magic/magic.css">
+    <link rel="stylesheet" href="/bower_components/onepage-scroll/onepage-scroll.css">
+    <link rel="stylesheet" href="/public/main.css">
 </head>
 <body>
-    <div class="ui fixed inverted main menu" id="header">
+<!--     <div class="ui fixed inverted main menu" id="header">
         <div class="container">
             <div class="item">
                 大庆动视传媒 
             </div>
             <div class="right menu">
-                <a href="" class="item">
+                <a href="#section1" class="item" data-menu-top="0p">
                     首页
                 </a>
-                <a href="" class="item">
+                <a href="#section2" class="item" data-menu-top="100p">
                     动画片
                 </a>
-                <a href="" class="item">
+                <a href="#section3" class="item" data-menu-top="200p">
                     儿童剧
                 </a>
-                <a href="" class="item">
+                <a href="#footer" class="item" data-menu-top="300p">
                     关于我们
                 </a>
             </div>
         </div>
     </div>
-
-    <section>
-        <div class="ui cube shape">
-            <div class="sides">
-              <div class="active side">
-                <div class="content">
-                    <img src="/img/1.jpg">
-                </div>
-              </div>
-              <div class="side">
-                <div class="content">
-                    <img src="/img/2.jpg">
-                </div>
-              </div>
-              <div class="side">
-                <div class="content">
-                    <img src="/img/3.jpg">
-                </div>
-              </div>
-            </div>
-        </div>
-
-        <div class="ui ignored icon direction buttons">
-            <div class="ui button" data-animation="flip" data-direction="left"><i class="left long arrow icon"></i></div>
-            <div class="ui icon button" data-animation="flip" data-direction="right"><i class="right long arrow icon"></i></div>
-        </div>
-    </section>
-    <section>
-        <div class="ui relaxed grid">
-            <div class="two column row">
-                <div class="column ui segment">
-                    <img class="ui centered image" src="/img/image.png">
-                </div>
-                <div class="column">
-                   <h2>大庆动视文化传媒</h2>
-                    <p>
-                        大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大
-                        庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动
-                        视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文
-                        化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传
-                        媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大
-                        庆动视文化传媒大庆动视文化传媒大庆动视文化传媒
-                    </p>
+ -->
+    <div class="scroll-page">
+        <section id="section1">
+            <div class="ui cube shape">
+                <div class="sides">
+                  <div class="active side">
+                    <div class="content">
+                        <img src="/img/1.jpg">
+                    </div>
+                  </div>
+                  <div class="side">
+                    <div class="content">
+                        <img src="/img/2.jpg">
+                    </div>
+                  </div>
+                  <div class="side">
+                    <div class="content">
+                        <img src="/img/3.jpg">
+                    </div>
+                  </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="ui relaxed grid">
-            <div class="two column row">
-                <div class="column ui segment">
-                    <img class="ui centered image" src="/img/image.png">
-                </div>
-                <div class="column">
-                   <h2>大庆动视文化传媒</h2>
-                    <p>
-                        大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大
-                        庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动
-                        视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文
-                        化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传
-                        媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大
-                        庆动视文化传媒大庆动视文化传媒大庆动视文化传媒
-                    </p>
+
+            <div class="ui ignored icon direction buttons">
+                <div class="ui button" data-animation="flip" data-direction="left"><i class="left long arrow icon"></i></div>
+                <div class="ui icon button" data-animation="flip" data-direction="right"><i class="right long arrow icon"></i></div>
+            </div>
+        </section>
+        
+        <section id="section2">
+            <div class="ui relaxed grid">
+                <div class="two column row">
+                    <div class="column ui">
+                        <img class="ui image ani-slide-left" src="/img/image.png">
+                    </div>
+                    <div class="column">
+                        <div class="ani-slide-right">
+                            <h2>大庆动视文化传媒</h2>
+                            <p>
+                                大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大
+                                庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动
+                                视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文
+                                化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传
+                                媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大
+                                庆动视文化传媒大庆动视文化传媒大庆动视文化传媒
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
+        <section id="section3">
+            <div class="ui relaxed grid">
+                <div class="two column row">
+                    <div class="column ui">
+                        <img class="ui centered image ani-slide-up" src="/img/image.png">
+                    </div>
+                    <div class="column">
+                        <div class="ani-slide-down">
+                            <h2>大庆动视文化传媒</h2>
+                            <p>
+                                大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大
+                                庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动
+                                视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文
+                                化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传
+                                媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大
+                                庆动视文化传媒大庆动视文化传媒大庆动视文化传媒
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    <div class="ui inverted black footer vertical segment footer">
+<!--     <div class="ui inverted black footer vertical segment footer" id="footer">
       <div class="container">
         <div class="ui stackable inverted divided relaxed grid">
           <div class="eight wide column">
@@ -169,12 +134,24 @@
         </div>
       </div>
     </div>
-<script src="/bower_components/jquery/dist/jquery.js"></script>
+ --><script src="/bower_components/jquery/jquery.js"></script>
 <script src="/bower_components/semantic/dist/semantic.js"></script>
+<script src="/bower_components/onepage-scroll/jquery.onepage-scroll.js"></script>
 <script src="/public/shape.js"></script>
 <script>
-$(function(){
-$});
+    $('.onepage-scroll').onepage_scroll({
+        sectionContainer: "section",
+        easing: "ease",                  
+        ationTime: 1000,             
+        pagination: true,                
+        updateURL: false,                
+        beforeMove: function(index) {},  
+        afterMove: function(index) {},   
+        loop: false,                     
+        keyboard: true,                  
+        responsiveFallback: false,        
+        direction: "vertical" 
+    });
 </script>    
 </body>
 </html>

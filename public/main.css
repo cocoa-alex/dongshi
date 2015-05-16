@@ -1,0 +1,116 @@
+body {
+    font-family: "PingHei","Lucida Grande","Lucida Sans Unicode", "STHeiti", "Helvetica","Arial","Verdana","sans-serif";
+}
+
+.ani-slide-left {
+    -webkit-animation: slideLeftRetourn 2s linear 0s forwards;
+    animation: slideLeftRetourn 2s linear 2s forwards;
+}
+
+.ani-slide-right {
+    -webkit-animation: slideRightRetourn 2s linear 0s forwards;
+    animation: slideRightRetourn 2s linear 2s forwards;
+}
+
+.ani-slide-up {
+    -webkit-animation: slideUp 2s linear 0s forwards;
+    animation:slideUp 2s linear 2s forwards;
+}
+
+.ani-slide-down {
+    -webkit-animation: slideDown 2s linear 0s forwards;
+    animation: slideDown 2s linear 0s forwards;
+}            
+
+/*    左侧划入    */
+@-webkit-keyframes slideLeftRetourn {
+  0% {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: translateX(0%);
+  }
+}
+@keyframes slideLeftRetourn {
+  0% {
+    transform-origin: 0 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform-origin: 0 0;
+    transform: translateX(0%);
+  }
+}
+
+/*    右侧划入    */
+@-webkit-keyframes slideRightRetourn {
+    0% {
+        -webkit-transform-origin: 0 0;
+        -webkit-transform: translateX(100%);
+    }            
+    100% {
+        -webkit-transform-origin: 0 0;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@keyframes slideRightRetourn {
+    0% {
+        transform-origin: 0 0;
+        transform: translateX(100%);
+    }            
+    100% {
+        transform-origin: 0 0;
+        transform: translateX(0%);
+    }
+}
+
+/*    上侧划入    */
+@-webkit-keyframes slideUp {
+    0% {
+       -webkit-transform-origin: 0 0;
+       -webkit-transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform-origin: 0 0;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        -webkit-transform-origin: 0 0;
+        -webkit-transform: transformY(-100%);
+    }
+    100% {
+        transform-origin: 0 0;
+        transform: transformY(0%);
+    }
+}
+
+/*    下侧划入    */
+@-webkit-keyframes slideDown {
+    0% {
+        -webkit-transform-origin: 0 0;
+        -webkit-transform: translateY(100%);
+    }
+    100% {
+        -webkit-transform-origin: 0 0;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform-origin: 0 0;
+        transform: translateY(100%);
+    }
+    100% {
+        transform-origin: 0 0;
+        transform: translateY(0%);
+    }
+}
