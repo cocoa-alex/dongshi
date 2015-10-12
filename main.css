@@ -1,0 +1,12 @@
+section {
+    padding-top: 51px;
+    height: 100vh;
+}
+
+.carousel, .carousel-inner, .carousel-inner .item, .carousel-inner .item img {
+    height: 100%;
+}
+
+.carousel-inner img {
+    width: 100vw;
+}

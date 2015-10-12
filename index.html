@@ -2,156 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>大庆动视文化传媒</title>
 
-    <!-- <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.css"> -->
-    <link rel="stylesheet" href="/bower_components/magic/magic.css">
-    <link rel="stylesheet" href="/bower_components/onepage-scroll/onepage-scroll.css">
-    <link rel="stylesheet" href="/public/main.css">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://libs.cdnjs.net/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<!--     <div class="ui fixed inverted main menu" id="header">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">动视文化传媒</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right" id="navbar-collapse">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">页面1</a></li>
+            <li><a href="#">页面2</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="carousel.svg" alt="...">
+              <div class="carousel-caption">
+                内容1
+              </div>
+            </div>
             <div class="item">
-                大庆动视传媒 
+              <img src="carousel.svg" alt="...">
+              <div class="carousel-caption">
+                内容2
+              </div>
             </div>
-            <div class="right menu">
-                <a href="#section1" class="item" data-menu-top="0p">
-                    首页
-                </a>
-                <a href="#section2" class="item" data-menu-top="100p">
-                    动画片
-                </a>
-                <a href="#section3" class="item" data-menu-top="200p">
-                    儿童剧
-                </a>
-                <a href="#footer" class="item" data-menu-top="300p">
-                    关于我们
-                </a>
+            <div class="item">
+              <img src="carousel.svg" alt="...">
+              <div class="carousel-caption">
+                内容3
+              </div>
             </div>
-        </div>
-    </div>
- -->
-    <div class="scroll-page">
-        <section id="section1">
-            <div class="ui cube shape">
-                <div class="sides">
-                  <div class="active side">
-                    <div class="content">
-                        <img src="/img/1.jpg">
-                    </div>
-                  </div>
-                  <div class="side">
-                    <div class="content">
-                        <img src="/img/2.jpg">
-                    </div>
-                  </div>
-                  <div class="side">
-                    <div class="content">
-                        <img src="/img/3.jpg">
-                    </div>
-                  </div>
-                </div>
-            </div>
+          </div>
 
-            <div class="ui ignored icon direction buttons">
-                <div class="ui button" data-animation="flip" data-direction="left"><i class="left long arrow icon"></i></div>
-                <div class="ui icon button" data-animation="flip" data-direction="right"><i class="right long arrow icon"></i></div>
-            </div>
-        </section>
-        
-        <section id="section2">
-            <div class="ui relaxed grid">
-                <div class="two column row">
-                    <div class="column ui">
-                        <img class="ui image ani-slide-left" src="/img/image.png">
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    </section>
+    <section></section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="row footer-nav">
+                        <div class="col-md-4 footer-nav-group">
+                            <h5>关于我们</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">链接1</a></li>
+                                <li><a href="#">链接1</a></li>
+                                <li><a href="#">链接1</a></li>
+                                <li><a href="#">链接1</a></li>
+                                <li><a href="#">链接1</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 footer-nav-group">
+                            <h5>关于我们</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">链接1</a></li>
+                                <li><a href="#">链接1</a></li>
+                                <li><a href="#">链接1</a></li>
+                                <li><a href="#">链接1</a></li>
+                                <li><a href="#">链接1</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 footer-nav-group">
+                            <h5>关于我们</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">链接1</a></li>
+                                <li><a href="#">链接1</a></li>
+                                <li><a href="#">链接1</a></li>
+                                <li><a href="#">链接1</a></li>
+                                <li><a href="#">链接1</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="column">
-                        <div class="ani-slide-right">
-                            <h2>大庆动视文化传媒</h2>
-                            <p>
-                                大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大
-                                庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动
-                                视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文
-                                化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传
-                                媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大
-                                庆动视文化传媒大庆动视文化传媒大庆动视文化传媒
-                            </p>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="footer-service text-right">
+                                <address>
+                                  <strong>大庆动视文化传媒有限公司</strong><br>
+                                  大庆软件园东风路<br>
+                                  <abbr title="Phone">电话:</abbr> (123) 456-7890
+                                </address>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="footer-qrcode">
+                                <img class="img-thumbnail" src="http://www.ikuai8.com/img/qrCode.png">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <section id="section3">
-            <div class="ui relaxed grid">
-                <div class="two column row">
-                    <div class="column ui">
-                        <img class="ui centered image ani-slide-up" src="/img/image.png">
-                    </div>
-                    <div class="column">
-                        <div class="ani-slide-down">
-                            <h2>大庆动视文化传媒</h2>
-                            <p>
-                                大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大
-                                庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动
-                                视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文
-                                化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传
-                                媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大庆动视文化传媒大
-                                庆动视文化传媒大庆动视文化传媒大庆动视文化传媒
-                            </p>   
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-<!--     <div class="ui inverted black footer vertical segment footer" id="footer">
-      <div class="container">
-        <div class="ui stackable inverted divided relaxed grid">
-          <div class="eight wide column">
-            <h3 class="ui inverted header">大庆动视文化传媒</h3>
-            <p>是一家很🐂B的公司，公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司公司</p>
-            <button type="submit" class="ui teal button">联系电话：0459-6666666</button>
-          </div>
-          <div class="four wide column">
-            <h5 class="ui teal inverted header">更多</h5>
-            <div class="ui inverted link list">
-              <a class="item" target="_blank">人才招聘</a>
-              <a class="item">关于我们</a>
-            </div>
-          </div>
-          <div class="four wide column">
-            <h5 class="ui teal inverted header">友情链接</h5>
-            <div class="ui inverted link list">
-              <a class="item">百度</a>
-              <a class="item">新浪</a>
-              <a class="disabled item">搜狐</a>
-              <a class="disabled item">网易</a>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
- --><script src="/bower_components/jquery/jquery.js"></script>
-<script src="/bower_components/semantic/dist/semantic.js"></script>
-<script src="/bower_components/onepage-scroll/jquery.onepage-scroll.js"></script>
-<script src="/public/shape.js"></script>
-<script>
-    $('.onepage-scroll').onepage_scroll({
-        sectionContainer: "section",
-        easing: "ease",                  
-        ationTime: 1000,             
-        pagination: true,                
-        updateURL: false,                
-        beforeMove: function(index) {},  
-        afterMove: function(index) {},   
-        loop: false,                     
-        keyboard: true,                  
-        responsiveFallback: false,        
-        direction: "vertical" 
-    });
-</script>    
+    </footer>
+
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://libs.cdnjs.net/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
 </body>
 </html>
