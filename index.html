@@ -82,10 +82,10 @@
     </section>
 
     <section class="section" data-index="3">
-        <div class="ani animated fadeIn delay-1">动</div>
-        <div class="ani animated fadeIn delay-2">视</div>
-        <div class="ani animated fadeIn delay-3">文</div>
-        <div class="ani animated fadeIn delay-4">化</div>
+        <div class="ani animated fadeIn">动</div>
+        <div class="ani animated fadeIn delay-1">视</div>
+        <div class="ani animated fadeIn delay-2">文</div>
+        <div class="ani animated fadeIn delay-3">化</div>
     </section>
 
     <section class="section">
@@ -177,16 +177,15 @@
           $('section[data-index="3"] .ani').toggleClass('flex-show', index === 3);
 
           $('.expand-img').toggleClass('show animated fadeIn', index === 4);
-
-          if (index !== 1) {
-              $('.navbar').removeClass('high-nav');
-          } else {
-              $('.navbar').addClass('high-nav');
-          }
         },
 
         onLeave: function(index, newIndex, direction) {
-            
+            if (index === 1) {
+                $('.navbar').removeClass('high-nav');
+            }
+            if (newIndex === 1) {
+                $('.navbar').addClass('high-nav');
+            }
         },
 
         /*

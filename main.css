@@ -1,4 +1,4 @@
-.navbar, .navbar * {
+.navbar, .navbar a {
     transition: all 0.5s;
 }
 
@@ -6,12 +6,14 @@
     height: 80px;
 }
 
-.high-nav .container, .high-nav .navbar-header {
+.high-nav .container, .high-nav .navbar-header, 
+.high-nav .navbar-nav, .high-nav .navbar-nav li, .high-nav .navbar-nav a {
     height: 100%;
 }
 
-.high-nav .navbar-header {
-    height: 100%:;
+.high-nav .navbar-nav a {
+    line-height: 50px;
+    font-size: 20px;
 }
 
 .high-nav .navbar-brand {
