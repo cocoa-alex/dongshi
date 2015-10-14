@@ -7,10 +7,12 @@
 
     <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://libs.cdnjs.net/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/fullPage.js/2.7.4/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.4.0/animate.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top high-nav">
         <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -29,8 +31,8 @@
           </ul>
         </div>
     </nav>
-
-    <section>
+    <div id="fullpage">
+    <section class="section">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -72,69 +74,133 @@
           </a>
         </div>
     </section>
-    <section></section>
-    
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="row footer-nav">
-                        <div class="col-md-4 footer-nav-group">
-                            <h5>关于我们</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#">链接1</a></li>
-                                <li><a href="#">链接1</a></li>
-                                <li><a href="#">链接1</a></li>
-                                <li><a href="#">链接1</a></li>
-                                <li><a href="#">链接1</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 footer-nav-group">
-                            <h5>关于我们</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#">链接1</a></li>
-                                <li><a href="#">链接1</a></li>
-                                <li><a href="#">链接1</a></li>
-                                <li><a href="#">链接1</a></li>
-                                <li><a href="#">链接1</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 footer-nav-group">
-                            <h5>关于我们</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#">链接1</a></li>
-                                <li><a href="#">链接1</a></li>
-                                <li><a href="#">链接1</a></li>
-                                <li><a href="#">链接1</a></li>
-                                <li><a href="#">链接1</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="footer-service text-right">
-                                <address>
-                                  <strong>大庆动视文化传媒有限公司</strong><br>
-                                  大庆软件园东风路<br>
-                                  <abbr title="Phone">电话:</abbr> (123) 456-7890
-                                </address>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="footer-qrcode">
-                                <img class="img-thumbnail" src="http://www.ikuai8.com/img/qrCode.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <section class="section">
+        <div class="ani-up animated slideInUp"></div>
+        <div class="ani-up animated slideInUp"></div>
+        <div class="ani-up animated slideInUp"></div>
+        <div class="ani-up animated slideInUp"></div>
+    </section>
+
+    <section class="section" data-index="3">
+        <div class="ani animated fadeIn delay-1">动</div>
+        <div class="ani animated fadeIn delay-2">视</div>
+        <div class="ani animated fadeIn delay-3">文</div>
+        <div class="ani animated fadeIn delay-4">化</div>
+    </section>
+
+    <section class="section">
+        <img class="expand-img">
+    </section>
+
+    <section class="section">
+      <footer class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-7">
+                      <div class="row footer-nav">
+                          <div class="col-md-4 footer-nav-group">
+                              <h5>关于我们</h5>
+                              <ul class="list-unstyled">
+                                  <li><a href="#">链接1</a></li>
+                                  <li><a href="#">链接1</a></li>
+                                  <li><a href="#">链接1</a></li>
+                                  <li><a href="#">链接1</a></li>
+                                  <li><a href="#">链接1</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-md-4 footer-nav-group">
+                              <h5>关于我们</h5>
+                              <ul class="list-unstyled">
+                                  <li><a href="#">链接1</a></li>
+                                  <li><a href="#">链接1</a></li>
+                                  <li><a href="#">链接1</a></li>
+                                  <li><a href="#">链接1</a></li>
+                                  <li><a href="#">链接1</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-md-4 footer-nav-group">
+                              <h5>关于我们</h5>
+                              <ul class="list-unstyled">
+                                  <li><a href="#">链接1</a></li>
+                                  <li><a href="#">链接1</a></li>
+                                  <li><a href="#">链接1</a></li>
+                                  <li><a href="#">链接1</a></li>
+                                  <li><a href="#">链接1</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-5">
+                      <div class="row">
+                          <div class="col-md-7">
+                              <div class="footer-service text-right">
+                                  <address>
+                                    <strong>大庆动视文化传媒有限公司</strong><br>
+                                    大庆软件园东风路<br>
+                                    <abbr title="Phone">电话:</abbr> (123) 456-7890
+                                  </address>
+                              </div>
+                          </div>
+                          <div class="col-md-5">
+                              <div class="footer-qrcode">
+                                  <img class="img-thumbnail" src="http://www.ikuai8.com/img/qrCode.png">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+    </section>
+    </div>
 
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="http://libs.cdnjs.net/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <script src="http://cdn.bootcss.com/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script src="http://cdn.bootcss.com/velocity/1.2.3/velocity.min.js"></script>
+    <script src="http://cdn.bootcss.com/velocity/1.2.3/velocity.ui.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        'verticalCentered': false,
+        'css3': true,
+        'sectionsColor': ['#F0F2F4', '#fff', '#fff', '#fff'],
+        'navigation': true,
+        'navigationPosition': 'right',
+        'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
+
+        afterLoad: function(anchorLink, index){
+          
+          $('.ani-up').toggleClass('flex-show', index === 2);
+
+          $('section[data-index="3"] .ani').toggleClass('flex-show', index === 3);
+
+          $('.expand-img').toggleClass('show animated fadeIn', index === 4);
+
+          if (index !== 1) {
+              $('.navbar').removeClass('high-nav');
+          } else {
+              $('.navbar').addClass('high-nav');
+          }
+        },
+
+        onLeave: function(index, newIndex, direction) {
+            
+        },
+
+        /*
+        Needed to maintain the fixed position of the element
+        due to problems using translate3d and fixed elements.
+        */
+        afterRender: function(){
+          $('#infoMenu').appendTo('body');
+
+          $('#githubLink, .twitter-share-button').appendTo('body');
+        }
+
+      });
+    });
+    </script>
 </body>
 </html>

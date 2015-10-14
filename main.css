@@ -1,3 +1,25 @@
+.navbar, .navbar * {
+    transition: all 0.5s;
+}
+
+.high-nav {
+    height: 80px;
+}
+
+.high-nav .container, .high-nav .navbar-header {
+    height: 100%;
+}
+
+.high-nav .navbar-header {
+    height: 100%:;
+}
+
+.high-nav .navbar-brand {
+    height: 100%;
+    font-size: 30px;
+    line-height: 50px;
+}
+
 section {
     padding-top: 51px;
     height: 100vh;
@@ -10,3 +32,60 @@ section {
 .carousel-inner img {
     width: 100vw;
 }
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expand-img {
+    display: flex;
+    background: gray;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+}
+
+.ani-up {
+    display: flex;
+    background: gray;
+    width: 150px;
+    height: 150px;
+    margin: 0 50px;
+    display: none;
+}
+
+.ani {
+    display: flex;
+    background: gray;
+    width: 150px;
+    height: 150px;
+    margin: 0 50px;
+    display: none;
+    font-size: 50px;
+    color: white;
+    line-height: 150px;
+    text-align: center;
+}
+
+.delay-1 {
+    animation-delay: 0.25s;
+}
+
+.delay-2 {
+    animation-delay: 0.5s;
+}
+
+.delay-3 {
+    animation-delay: 0.75s;
+}
+
+.delay-4 {
+    animation-delay: 1s;
+}
+
+.flex-show {
+    display: flex;
+}
+
