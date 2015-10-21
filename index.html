@@ -33,7 +33,26 @@
             <li><a href="#">页面2</a></li>
           </ul>
         </div>
+
+        <div class="target-hamburger">
+          <ul class="hamburger">
+            <li class="bun"></li>
+            <li class="bun"></li>
+          </ul>
+        </div>
     </nav>
+
+    <div class="nav-full-screen height-100">
+      <nav>
+        <ul id="menu-menu" class="container">
+          <li class="menu-item"><a>公司介绍</a></li>
+          <li class="menu-item"><a>业务介绍</a></li>
+          <li class="menu-item"><a>招聘模块</a></li>
+          <li class="menu-item"><a>联系我们</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <div id="fullpage">
     <section class="section">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -208,6 +227,27 @@
           $('.see-movie').css('background', 'rgba(0,0,0,0.7)')
           $('.video-mask').hide();
           $('#dongshi-video')[0].play();
+      });
+
+      // 点击汉堡包
+      $('.hamburger').click(function () {
+          if ($('body').hasClass('nav-out')) {
+            return;
+          }
+
+          $('body').toggleClass('nav-active');
+
+          if ($('body').hasClass('nav-active')) {
+              $('.nav-full-screen').fadeIn();
+          } else {
+              $('.nav-full-screen').fadeOut();
+          }
+
+          $('body').addClass('nav-out');
+
+          setTimeout(function () {
+            $('body').removeClass('nav-out');
+          }, 1000);
       });
     });
     </script>
