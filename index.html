@@ -113,8 +113,112 @@
         </div>
     </section>
 
+    <section class="section people-list">
+        <div class="people-item flex-wrap flex-col-4 hover" style="background-color: #e93e19; color: white;">
+            <div class="ratio-16-9 hover-out">
+                <img src="photo.jpg"/>
+            </div>
+            <div class="bleed hover-in">
+              <div class="flex-container">
+                <div class="flex-item flex-align-center align-center">
+                  <header>
+                    <h2 class="small">张维</h2>
+                    <p class="subheading">
+                      一个老男人
+                    </p>
+                  </header>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="people-item flex-wrap flex-col-4 hover" style="background-color: #f9b635; color: white;">
+            <div class="ratio-16-9 hover-out">
+                <img src="photo2.jpg"/>
+            </div>
+            <div class="bleed hover-in">
+              <div class="flex-container">
+                <div class="flex-item flex-align-center align-center">
+                  <header>
+                    <h2 class="small">张维</h2>
+                    <p class="subheading">
+                      一个老男人
+                    </p>
+                  </header>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="people-item flex-wrap flex-col-4 hover" style="background-color: #002395; color: white;">
+            <div class="ratio-16-9 hover-out">
+                <img src="photo.jpg"/>
+            </div>
+            <div class="bleed hover-in">
+              <div class="flex-container">
+                <div class="flex-item flex-align-center align-center">
+                  <header>
+                    <h2 class="small">张维</h2>
+                    <p class="subheading">
+                      一个老男人
+                    </p>
+                  </header>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="people-item flex-wrap flex-col-4 hover" style="background-color: #49bdff; color: white;">
+            <div class="ratio-16-9 hover-out">
+                <img src="photo2.jpg"/>
+            </div>
+            <div class="bleed hover-in">
+              <div class="flex-container">
+                <div class="flex-item flex-align-center align-center">
+                  <header>
+                    <h2 class="small">张维</h2>
+                    <p class="subheading">
+                      一个老男人
+                    </p>
+                  </header>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="people-item flex-wrap flex-col-4 hover" style="background-color: #ffb7ca; color: white;">
+            <div class="ratio-16-9 hover-out">
+                <img src="photo.jpg"/>
+            </div>
+            <div class="bleed hover-in">
+              <div class="flex-container">
+                <div class="flex-item flex-align-center align-center">
+                  <header>
+                    <h2 class="small">张维</h2>
+                    <p class="subheading">
+                      一个老男人
+                    </p>
+                  </header>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="people-item flex-wrap flex-col-4 hover" style="background-color: #e84135; color: white;">
+            <div class="ratio-16-9 hover-out">
+                <img src="photo2.jpg"/>
+            </div>
+            <div class="bleed hover-in">
+              <div class="flex-container">
+                <div class="flex-item flex-align-center align-center">
+                  <header>
+                    <h2 class="small">张维</h2>
+                    <p class="subheading">
+                      一个老男人
+                    </p>
+                  </header>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section last-section">
-  
       <img class="wx-img img-thumbnail" src="http://www.ikuai8.com/img/qrCode.png">
 
       <footer class="footer">
@@ -183,6 +287,7 @@
     $(document).ready(function() {
       $('#fullpage').fullpage({
         'verticalCentered': false,
+        'paddingTop': 50,
         'css3': true,
         'sectionsColor': ['#F0F2F4', '#fff', '#fff', '#fff'],
         'navigation': true,
@@ -190,7 +295,7 @@
         'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
 
         afterLoad: function(anchorLink, index){
-          
+
           $('.ani-up').toggleClass('flex-show', index === 2);
 
           $('section[data-index="3"] .ani').toggleClass('flex-show', index === 3);
