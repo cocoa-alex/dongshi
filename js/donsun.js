@@ -65,9 +65,11 @@ $(document).ready(function(){
 jQuery(document).ready(function($) {
   "use strict";
 	$('.facts-content').appear(function() {
-	$('#lines').animateNumber({ number: 75 }, 2000 );
-	$('#lines1').animateNumber({ number: 25 }, 2000 );
-	$('#lines2').animateNumber({ number: 100 }, 2000 );
-	$('#lines3').animateNumber({ number: 150 }, 2000 );
+    	$('#lines').animateNumber({ number: 75 }, 2000 );
+    	$('#lines1').animateNumber({ number: 25 }, 2000 );
+    	$('#lines2').animateNumber({ number: 100 }, 2000 );
+    	$('#lines3').animateNumber({ number: 150 }, 2000 );
 	},{accX: 0, accY: -50});
 });
+
+window.sr = new scrollReveal();

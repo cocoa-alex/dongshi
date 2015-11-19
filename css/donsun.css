@@ -39,7 +39,8 @@ header{
 body {
     width: 100%;
     height: 100%;
-    font-family: "微软雅黑", "Arial Unicode MS";
+    font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased; 
     color: #fff;
 /*    background-color: #000;*/
 }
@@ -61,8 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
-    font-family: "微软雅黑", "Arial Unicode MS";
+    font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
     font-weight: 700;
     position: relative;
     z-index: 1;
@@ -226,7 +226,6 @@ new
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: "微软雅黑", "Arial Unicode MS";
     background-color: #000;
 }
 
@@ -300,7 +299,7 @@ new
 
 .navbar-toggle {
     padding: 4px 6px;
-    font-size: 16px;
+    font-size: 14px;
     color: #bbb;
 }
 
@@ -547,6 +546,12 @@ section h3.section-subheading {
     text-align: center;
     color: #fff;
     background-color: #fed136;
+        transition: transform .5s;
+
+}
+
+.timeline-image:hover {
+    transform: scale(1.2);
 }
 
 .timeline>li .timeline-image h4 {
@@ -806,6 +811,10 @@ ul.social-buttons li a {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
+}
+
+.timeline-body p {
+    font-size: 16px;
 }
 
 ul.social-buttons li a:hover,
@@ -1084,4 +1093,89 @@ body {
 
 #intro-slider .flex-direction-nav {
     display: none;
+}
+
+.flexslider .slides > li {
+    display: none;
+    -webkit-backface-visibility: hidden;
+    list-style: none;
+}
+
+.bg-blue {
+    background-color: rgb(57, 155, 252);
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.work-wrapper {
+    padding: 150px 0;
+}
+
+.work-wrapper .container {
+    margin: 0 auto;
+}
+
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
 }
