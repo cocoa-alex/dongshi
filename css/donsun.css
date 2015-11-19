@@ -1006,3 +1006,82 @@ body {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
+
+/*Author Steve*/
+/*foot messages*/
+.ft_msg{
+    margin-left: 10px;
+}
+
+/*
+* intro
+*/
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 350px 0 330px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index:1;
+}
+
+.intro-page {
+    padding: 150px 0 130px;
+    background:#313131 url(/img/bg/1.jpg) no-repeat center;
+    background-size: 100% auto;
+}
+
+.intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.brand-heading {
+    font-size: 36px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.intro-text {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.line {
+    background: #fff;
+    width: 80px;
+    height: 1px;
+    margin: 25px auto;
+    position: relative;
+    z-index: 1;
+}
+
+.line1 {
+    background: #000;
+    width: 80px;
+    height: 1px;
+    margin: 25px auto;
+    position: relative;
+    z-index: 1;
+}
+
+.line3 {
+    background: #fff;
+    width: 80px;
+    height: 1px;
+    margin: 25px auto;
+    position: relative;
+    z-index: 1;
+}
+
+#intro-slider .controlNav {
+    display: none;
+}
+
+#intro-slider .flex-direction-nav {
+    display: none;
+}
