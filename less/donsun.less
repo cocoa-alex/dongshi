@@ -10,6 +10,7 @@ body {
 
 .text-muted {
 	color: @gray;
+    font-family: fantasy;
 }
 
 .text-primary {
@@ -413,7 +414,9 @@ section {
 		}
 	}
 	.timeline-body {
-		> p,
+        > p{
+            color: #000;
+        },
 		> ul {
 			margin-bottom: 0;
 		}
@@ -726,3 +729,4 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: @brand-primary;
 }
+
