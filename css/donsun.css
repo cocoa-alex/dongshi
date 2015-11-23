@@ -30,6 +30,11 @@ body {
 /*    background-color: #000;*/
 }
 
+.logo-text {
+    font-size: 20px;
+    float: left;
+}
+
 .body {
     position: relative;
     width: 100%;
@@ -216,6 +221,23 @@ new
     outline: 0;
 }
 
+.navbar-brand .logo {
+    background: url(../img/qr/qrcode.jpg) no-repeat;
+    background-size: cover;
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -8px;
+    right: 12px;
+}
+
+.navbar-brand .page-scroll {
+    display: block;
+    float: left;
+}
+
 .top-menu {
     margin-top: 20px;
 }
@@ -385,7 +407,6 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item {
     right: 0;
-    margin: 0 0 15px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -456,7 +477,6 @@ section h3.section-subheading {
 
 @media(min-width:767px) {
     #portfolio .portfolio-item {
-        margin: 0 0 30px;
     }
 }
 
@@ -536,8 +556,10 @@ section h3.section-subheading {
 }
 
 .timeline>li .timeline-image h4 {
-    margin-top: 12px;
-    font-size: 10px;
+    width: 20px;
+    height: 100%;
+    margin-top: 0;
+    font-size: 14px;
     line-height: 14px;
 }
 
@@ -580,6 +602,10 @@ section h3.section-subheading {
 }
 
 @media(min-width:768px) {
+    .logo-text {
+        display: none;
+    }
+
     .timeline:before {
         left: 50%;
     }
@@ -604,9 +630,9 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-image h4 {
-        margin-top: 16px;
         font-size: 13px;
         line-height: 18px;
+        margin-top: 6px;
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
@@ -617,6 +643,10 @@ section h3.section-subheading {
 }
 
 @media(min-width:992px) {
+    .logo-text {
+        display: block;
+    }
+    
     .timeline>li {
         min-height: 150px;
     }
@@ -632,7 +662,7 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-image h4 {
-        margin-top: 30px;
+        margin-top: 15px;
         font-size: 18px;
         line-height: 26px;
     }
@@ -658,7 +688,7 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-image h4 {
-        margin-top: 40px;
+        margin-top: 28px;
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
@@ -1092,11 +1122,19 @@ body {
 }
 
 .work-wrapper {
-    padding: 150px 0;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .work-wrapper .container {
     margin: 0 auto;
+    height: 40vh;
+}
+
+.work-wrapper p {
+    font-size: 16px;
 }
 
 
@@ -1194,7 +1232,7 @@ body {
     background: #fff;
     width: 180px;
     height: 1px;
-    margin: 5px auto;
+    margin: 5px auto 20px;
     position: relative;
     z-index: 1;
 }
