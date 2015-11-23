@@ -3,21 +3,6 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
-
-header{
-    text-align: center;
-    color: #fff;
-    background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    height: 100vh;
-}
 .cover {
     background: url(/img/overlay.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
     position: absolute;
@@ -109,7 +94,7 @@ a:focus {
 }
 
 .btn-primary {
-    border-color: #fed136;
+    border-color: #fff;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -214,14 +199,6 @@ fieldset[disabled] .btn-xl.active {
 /*
 new
 */
-.line {
-    background: #fff;
-    width: 80px;
-    height: 1px;
-    margin: 25px auto;
-    position: relative;
-    z-index: 1;
-}
 .navbar {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -257,6 +234,10 @@ new
     font-weight: 700;
     margin-top: 10px;
     color: #222;
+}
+.nav i {
+    font-family: "微软雅黑";
+    font-style: normal;
 }
 
 .navbar-custom a {
@@ -934,7 +915,8 @@ body {
 }
 
 .other-info {
-    
+    width: auto;
+    height: auto;
 }
 
 .animated {
@@ -1028,8 +1010,8 @@ body {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
-    padding: 350px 0 330px;
+    height: 100%;
+    padding: 450px 0 420px;
     text-align: center;
     color: #fff;
     position: relative;
@@ -1073,7 +1055,7 @@ body {
     background: #000;
     width: 80px;
     height: 1px;
-    margin: 25px auto;
+    margin: 5px auto;
     position: relative;
     z-index: 1;
 }
@@ -1178,4 +1160,41 @@ body {
 .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
+}
+
+.container .join{
+    height: 100%;
+}
+/*about*/
+.about-bg{
+    padding: 130px 0;
+    background:#313131 url(/img/about-bg.jpg) no-repeat center;
+    background-size: 100% auto;
+    position: relative;
+    z-index:1;
+}
+/*team*/
+.team{
+    padding: 130px 0;
+    background:url(/img/about-bg.jpg);
+    background-size: 100% auto;
+    position: relative;
+    z-index:1;
+    
+}
+/*join start*/
+.join{
+    padding: 130px 0;
+    background:#313131 url(/img/about-bg.jpg) no-repeat center;
+    background-size: 100% auto;
+    position: relative;
+    z-index:1;
+}
+.line-j{
+    background: #fff;
+    width: 180px;
+    height: 1px;
+    margin: 5px auto;
+    position: relative;
+    z-index: 1;
 }
