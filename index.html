@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>动视文化传媒官方网站</title>
+    <title>动视文化-与您共同成长</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,136 +20,81 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/supersized.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/cmp/logo.ico">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom" onLoad="$('#num').val(1);">
+<div class="body">
+<!-- header -->
+<header>
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">DonSun</a>
+                <a class="navbar-brand" href="#page-top">
+                <span class="page-scroll" style="font-size: 20px;">donsun</span>
+                </a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="navbar-collapse navbar-right navbar-main-collapse top-menu collapse in" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse top-menu">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">产品</a>
+                        <a class="page-scroll " href="#portfolio"><i>产品</i>Products</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">作品</a>
+                        <a class="page-scroll" href="#about"><i>关于</i>About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">关于About</a>
+                        <a class="page-scroll" href="#team"><i>团队</i>Team</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">团队Team</a>
+                        <a class="page-scroll" href="#recruitment"><i>招聘</i>Join </a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">联系Contact</a>
+                        <a class="page-scroll" href="#contact"><i>联系</i>Contact</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
+        <!-- /.container -->
     </nav>
-    <!-- Header -->
-<!--
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="animated slideInDown">
-                    <div class="intro-heading">欢迎来到动视文化</div>
-                    <div class="line"></div>
-                    <div class="intro-line-in">Tt's Nice To Meet You</div>
-                </div>
-            </div>
-        </div>
-    </header>
--->
-<section class="intro" id="home">
-	<div class="cover"></div>
-	<div class="intro-body">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 animated text-slide">
-					<div id="intro-slider" class="flexslider">
-						<ul class="slides">
-							<li>
-								<h3 class="brand-heading">We will design your future</h3>
-								<div class="line"></div>
-								<p class="intro-text yah">海互动是一家网站定制、APPS设计公司</p>
-							</li>
-							<li>
-								<h3 class="brand-heading">WE CREATE Digital Experience</h3>
-								<div class="line"></div>
-								<p class="intro-text yah">我们专注于品质和独特的解决方案</p>
-							</li>
-                            <li>
-								<h3 class="brand-heading">We will design your ideas</h3>
-								<div class="line"></div>
-								<p class="intro-text yah">我们用优秀的设计帮助企业形成有价值的品牌竞争力</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-white">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+</header>
+<!-- Header -->
+    <section class="intro" id="home">
+        <div class="cover"></div>
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 animated text-slide">
+                        <div id="intro-slider" class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <h3 class="brand-heading">We just do our own cartoons</h3>
+                                    <div class="line"></div>
+                                    <p class="intro-text yah">我们只做自己的动画片</p>
+                                </li>
+                                <li>
+                                    <h3 class="brand-heading">WE CREATE Digital Experience</h3>
+                                    <div class="line"></div>
+                                    <p class="intro-text yah">我们专注于做本土专业的动画片</p>
+                                </li>
+                                <li>
+                                    <h3 class="brand-heading">We will design your ideas</h3>
+                                    <div class="line"></div>
+                                    <p class="intro-text yah">我们要打造东北第一动画公司</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -157,18 +102,20 @@
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray no-padding">
-        <div class="">
+        <div>
+<!--
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading text-muted">Portfolio</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
+-->
             <div class="bg-blue work-wrapper">
                 <div class="row container">
                     <div class="col-md-8">
                         <div class="col-md-6" data-sr="enter left, hustle 100px, reset">
-                            <h2>标题标题标题标题标题</h2>
+                            <h2>原创作品</h2>
                             <p>文字文字文字文字文字文字文字文字文字文字文字文字文字
                             文字文字文字文字文字文字文字文字文字文字文字
                             文字文字文字文字文字文字文字文字文字文字文字文字</p>
@@ -209,7 +156,7 @@
 
                     <div class="col-md-8"  data-sr="enter right, hustle 100px, reset">
                         <div class="col-md-6 col-md-offset-6">
-                            <h2 class="text-muted">标题标题标题标题标题</h2>
+                            <h2 class="text-muted">外包项目</h2>
                             <p class="text-muted">文字文字文字文字文字文字文字文字文字文字文字文字文字
                             文字文字文字文字文字文字文字文字文字文字文字
                             文字文字文字文字文字文字文字文字文字文字文字文字</p>
@@ -221,7 +168,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="about-bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -290,9 +237,11 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image" data-sr="scale up 20%, reset">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
+                                <h4>精
+                                    <br>彩
+                                    <br>继
+                                    <br>续
+                                </h4>
                             </div>
                         </li>
                     </ul>
@@ -307,6 +256,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading text-muted">精英团队</h2>
+                    <div class="line1"></div>
                     <h3 class="section-subheading text-muted">Our Amazing Team.</h3>
                 </div>
             </div>
@@ -359,8 +309,8 @@
                         <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/4.jpg" class="img-responsive img-circle" alt="">
-                        <h3 class="text-muted">姜 deal</h3>
+                        <img src="img/team/8.jpg" class="img-responsive img-circle" alt="">
+                        <h3 class="text-muted">苏 航</h3>
                         <p class="text-muted">动画师</p>
                     </div>
                 </div>
@@ -381,13 +331,63 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                    <p class="large text-muted">人生难得几回搏，此时不搏更待何时？.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Recruitment Section -->
+    <section id="recruitment" class="join">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">加入我们</h2>
+                    <h3 class="section-subheading text-white">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <h2 class="text-center">动画师</h2>
+                    <div class="line-j"></div>
+                    <div>
+                        <blockquote>工作地点：大庆<br> 工作性质：全职<br>招聘人数：<strong>3</strong></blockquote>
+                         
+                         <blockquote>任职要求:</blockquote>
+                        <ul>
+                            <li>一年以上相关专业的工作经验</li>
+                            <li>一年以上相关专业的工作经验</li>
+                            <li>一年以上相关专业的工作经验</li>
+                            <li>一年以上相关专业的工作经验</li>
+                            <li>一年以上相关专业的工作经验</li>
+                            <li>一年以上相关专业的工作经验</li>
+                            <li>一年以上相关专业的工作经验</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <h2 class="text-center">上色师</h2>
+                    <div class="line-j"></div>
+                       <div>
+                        <blockquote>工作地点：大庆<br> 工作性质：全职<br>招聘人数：<strong>3</strong></blockquote>
+                         
+                         <blockquote>任职要求:</blockquote>
+                        <ul>
+                            <li>一年以上相关专业的工作经验</li>
+                            <li>一年以上相关专业的工作经验</li>
+                            <li>一年以上相关专业的工作经验</li>
+                            <li>一年以上相关专业的工作经验</li>
+                            <li>一年以上相关专业的工作经验</li>
+                            <li>一年以上相关专业的工作经验</li>
+                            <li>一年以上相关专业的工作经验</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Clients Aside -->
+    <!--hide->
     <aside class="clients">
         <div class="container">
             <div class="row">
@@ -414,7 +414,7 @@
             </div>
         </div>
     </aside>
-    
+    <!-->
     <!-- Contact Section -->
     <section id="contact">
      <div class="other-info">
@@ -445,7 +445,7 @@
                       <div class="row footer-nav">
                           <h4><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><span class="ft_msg">工作邮箱</span></h4>
                               <ul class="list-unstyled">
-                                  <li><p>donshi_work@163.com</p></li>
+                                  <li><p>dongshi_work@163.com</p></li>
                               </ul>
                       </div>
                   </div>
@@ -463,7 +463,7 @@
     </footer>
 
     </section>
-
+    </div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -484,6 +484,15 @@
     <script src="js/donsun.js"></script>
     
     <!-- Custom Theme JavaScript -->
+<script type="text/javascript">
+function showMK(){
+	var num = $("#num").val();
+	$("#MK_"+num).css('display','block');
+	if(num == '3'){
+		$("#more").css('display','none');
+	}else{
+		$("#num").val(parseInt(num) + 1);
+	}
 }
 </script>
 
