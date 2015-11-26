@@ -222,15 +222,16 @@ new
 }
 
 .navbar-brand .logo {
-    background: url(../img/qr/qrcode.jpg) no-repeat;
+    background: url(../img/cmp/logo.png) no-repeat;
     background-size: cover;
     display: block;
     float: left;
-    width: 40px;
+    width: 50px;
     height: 40px;
     position: relative;
     top: -8px;
-    right: 12px;
+    right: 15px;
+    left:-10px;
 }
 
 .navbar-brand .page-scroll {
@@ -946,7 +947,8 @@ body {
 
 .other-info {
     width: auto;
-    height: auto;
+    height: auto
+    background-image: url('../img/header-bg.jpg');
 }
 
 .animated {
@@ -1213,20 +1215,38 @@ body {
 }
 /*team*/
 .team{
-    padding: 130px 0;
-    background:url(/img/about-bg.jpg);
+    background:url(/img/team-bg5.jpg)no-repeat center;
     background-size: 100% auto;
-    position: relative;
-    z-index:1;
     
 }
 /*join start*/
 .join{
     padding: 130px 0;
-    background:#313131 url(/img/about-bg.jpg) no-repeat center;
+    background:#313131 url(/img/footer-bg.jpg) no-repeat center;
     background-size: 100% auto;
     position: relative;
     z-index:1;
+}
+.join .text{
+    color: black;
+}
+
+.join .img{
+    width: 300px;
+    height: auto;
+}
+
+.asm{
+    -webkit-transition:
+    -webkit-transform 1s ease;
+    -moz-transition:-moz-transform 1s ease;
+    transition:transform 1s ease;
+    }
+.asm:hover{
+    -webkit-transform:scale(-1,1); 
+    -moz-transform:scale(-1,1); 
+    transform:scale(-1,1);
+    background-image: url(/img/team-bg.jpg);
 }
 .line-j{
     background: #fff;
@@ -1235,4 +1255,9 @@ body {
     margin: 5px auto 20px;
     position: relative;
     z-index: 1;
+}
+
+/*footer-contact*/
+#contact{
+    
 }
