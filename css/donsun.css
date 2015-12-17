@@ -1226,6 +1226,11 @@ body {
     position: relative;
     z-index:1;
 }
+
+.join-sm {
+    background:#313131 no-repeat center;
+}
+
 .join .text{
     color: black;
 }
